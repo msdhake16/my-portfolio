@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Header from './Components/Header';
+
 
 const App = () => {
 
@@ -8,7 +10,8 @@ const App = () => {
     try {
       let response = await fetch('/resumeData.json');
       response = await response.json();
-      setResumeResponse({ resumeData: response });
+      console.log(response);
+      setResumeResponse({ ...response });
     } catch (error) {
       console.log(error)
     }
@@ -19,7 +22,8 @@ const App = () => {
   },[]);
 
     return (
-      <div>
+      <div className="App">
+        <Header data={resumeResponse.main} />
         
       </div>
     );
