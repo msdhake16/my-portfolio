@@ -16,6 +16,11 @@ const Header = ({data = { myInfo : [], address : {}, social : []}}) =>{
 
                <ul id="nav" className="nav">
                   <li className="current"><Link className="smoothscroll" href="#home">Home</Link></li>
+                  <li><Link className="smoothscroll" href="#about">About</Link></li>
+                  <li><Link className="smoothscroll" href="#resume">Resume</Link></li>
+                  <li><Link className="smoothscroll" href="#portfolio">Works</Link></li>
+                  <li><Link className="smoothscroll" href="#testimonials">Testimonials</Link></li>
+                  <li><Link className="smoothscroll" href="#contact">Contact</Link></li>
                </ul>
             </nav>
 
