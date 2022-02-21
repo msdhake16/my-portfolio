@@ -1,14 +1,13 @@
 import React from 'react';
 //import Link from './Link';
 import ReactTyped from 'react-typed';
-//import SocialComponent from './SubComponents/SocialComponent';
+import SocialComponent from './SubComponents/SocialComponent';
 
 const Header = ({data = { myInfo : [], address : {}, social : []}}) =>{
    
    console.log(data);
       const {myInfo, name, occupation, description, address : {city}, social} = data;
 
-      console.log(myInfo);
       return (
          <header id="home">
             <nav id="nav-wrap">
@@ -33,7 +32,7 @@ const Header = ({data = { myInfo : [], address : {}, social : []}}) =>{
                        smartBackspace
                   /></h1>
                   <ul className="social">
-                     {/* <SocialComponent social={social} /> */}
+                     <SocialComponent social={social} />
                   </ul>
                </div>
             </div>

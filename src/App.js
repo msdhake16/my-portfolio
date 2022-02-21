@@ -10,7 +10,6 @@ const App = () => {
     try {
       let response = await fetch('/resumeData.json');
       response = await response.json();
-      console.log(response);
       setResumeResponse({ ...response });
     } catch (error) {
       console.log(error)
