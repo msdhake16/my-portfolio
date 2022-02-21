@@ -1,0 +1,153 @@
+{
+  "main": {
+    "name": "Manoj Suresh Dhake",
+    "occupation": "Software Engineer",
+    "description": "It is not enough to do your best: you must KNOW what to do, and THEN do your best.",
+    "image": "profilepic.jpg",
+    "bio": "When somebody begins a sentence with “IT WOULD BE NICE IF..” the right thing to do is to wait politely for the speaker to finish. No project ever gets around to the it-would-be-nice features: or if they do, they regret it. Wait for sentences that begin “WE HAVE TO..” and pay close attention, and see if you agree.",
+    "contactmessage": "Hey if you like then Contact me",
+    "email": "manojdhake62@gmail.com",
+    "phone": "8097725329",
+    "myInfo":["Developer", "Anthropologist", "Blogger", "Learner", "Writer","Freelancer"],
+    "address": {
+      "street": "Magar-Patta city",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "zip": "400104"
+    },
+    "website": "http://www.manojd.com",
+    "resumedownload": "MANOJ_DHAKE.pdf",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/home",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/dhakemanoj",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/msdhake",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "It’s hard enough to find an error in your code when you’re looking for it; its even harder when you’ve ASSUMED your code is ERROR-FREE.",
+    "education": [
+      {
+        "school": "DATTA MEGHGE COLLAGE OF ENGINEERING",
+        "degree": "Mumbai Univesity",
+        "graduated": "April-2018",
+        "description": "One man’s magic is another man’s engineering. Supernatural is a null word."
+      },
+      {
+        "school": "ST FRANCIS HIGHER SECONDARY SCHOOL",
+        "degree": "12th",
+        "graduated": "March 2014",
+        "description": "If you’re not prepared to be wrong, you’ll never come up with anything original."
+      }
+    ],
+    "work": [
+      {
+        "company": "Steepgraph Systems PVT LTD",
+        "title": "Software Engineer",
+        "years": "March 2020 - Present",
+        "description": "Nobody is like you, Nobody can be like you, Nobody is you, You are You-unique, And this is your power, Claim it. Own it"
+      },
+      {
+        "company": "MY OWN Company",
+        "title": "Bindass Jivan",
+        "years": "March 2014 - February 2020",
+        "description": "kaam ko start karna kaam nhi hota, kaam karne ko kaam nhi botle, kaam katam karne ko kaam bolte"
+      }
+    ],
+    "skills": [
+      {
+        "name": "JAVA",
+        "level": "95%"
+      },
+      {
+        "name": "Advance Java",
+        "level": "90%"
+      },
+      {
+        "name": "JS",
+        "level": "85%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "75%"
+      },
+      {
+        "name": "SQL DataBase",
+        "level": "60%"
+      },
+      {
+        "name": "Git",
+        "level": "85%"
+      },
+      {
+        "name": "CSS",
+        "level": "75%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      }  
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Resume Website",
+        "category": "For Hiring Purpose",
+        "image": "resume.jpg",
+        "url": "#"
+      },
+      {
+        "title": "SM-Vita Website",
+        "category": "Collage website",
+        "image": "SMVITA.jpg",
+        "url": "#"
+      },
+      {
+        "title": "Breek",
+        "category": "matrimonial",
+        "image": "matrimonal.jpg",
+        "url": "#"
+      },
+      {
+        "title": "Login Page",
+        "category": "authentication",
+        "image": "jwt_project.png",
+        "url": "#"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Tera bhai Mark hain. Wikipedia pe page ayega!!! ",
+        "user": "Manish VitaKar"
+      },
+      {
+        "text": "Be a lion Always!!!",
+        "user": "MySelf"
+      }
+    ]
+  }
+}
