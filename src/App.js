@@ -20,8 +20,7 @@ const App = () => {
 
     return (
       <div>
-        <h1>in app...</h1>
-        <code>{JSON.stringify(resumeResponse, undefined, 2)}</code>
+        
       </div>
     );
 }
