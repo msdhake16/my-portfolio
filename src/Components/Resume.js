@@ -1,7 +1,9 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import ScrollToTop from './SubComponents/ScrollToTop';
 
 const Resume = ({data = {education : [], work : [], skills : []}}) => {
-
+  const {hash} = useLocation()
   const {skillmessage, education, work, skills} = data;
     
   const educationDetails = education.map(function(education){
@@ -22,7 +24,7 @@ const Resume = ({data = {education : [], work : [], skills : []}}) => {
 
     return (
       <section id="resume">
-
+         {hash === "#resume" && <ScrollToTop/>}
       <div className="row education">
          <div className="three columns header-col">
             <h1><span>Education</span></h1>

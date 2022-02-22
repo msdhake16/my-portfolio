@@ -1,8 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import ScrollToTop from './SubComponents/ScrollToTop';
 
 const Portfolio = ({data = { projects : []}}) => {
 
   const {projects} = data;
+  const {hash} = useLocation();
 
   let myProjects = projects.map((projects) => {
     var projectImage = 'images/portfolio/'+projects.image;
@@ -24,7 +27,7 @@ const Portfolio = ({data = { projects : []}}) => {
 
     return (
       <section id="portfolio">
-
+        {hash === "#portfolio" && <ScrollToTop/>}
       <div className="row">
 
          <div className="twelve columns collapsed">

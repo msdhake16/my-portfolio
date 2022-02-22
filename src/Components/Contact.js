@@ -1,12 +1,18 @@
 // eslint-disable
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import {
+   useLocation
+ } from "react-router-dom";
 import emailjs from 'emailjs-com';
+import ScrollToTop from './SubComponents/ScrollToTop';
 
 const FORM_FIELDS = {
 } 
 
 const Contact = ({data = {address : {}}}) => {
    const [fields, setFields] = useState(FORM_FIELDS);
+   // const ref = useRef(null);
+   const {hash} = useLocation();
 
    const handleChange = (event) => {
      const {name, value} = event.target;
@@ -15,7 +21,7 @@ const Contact = ({data = {address : {}}}) => {
         [name]: value
      })
    }
-
+   
    const {name, address : {street, city, state, zip }, phone, email, message} = data;
 
    const onFormSubmit = (event) => {
@@ -34,7 +40,7 @@ const Contact = ({data = {address : {}}}) => {
    
    return (
          <section id="contact">
-
+            {hash === "#contact" && <ScrollToTop/>}
             <div className="row section-head">
 
                <div className="two columns header-col">

@@ -1,11 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import ScrollToTop from './SubComponents/ScrollToTop';
 
 const About =  ({data = {address : {}}}) => {
     
    const {name , image, bio, address : { street, city, state, zip }, phone , email, resumedownload} = data;
-   
+   const {hash} = useLocation();
+
    return (
       <section id="about">
+         {hash === "#about" && <ScrollToTop/>}
       <div className="row">
          <div className="three columns">
             <img className="profile-pic"  src={`images/${image}`} alt="Manoj Dhake Profile Pic" />

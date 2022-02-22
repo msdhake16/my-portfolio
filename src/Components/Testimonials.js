@@ -1,8 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import ScrollToTop from './SubComponents/ScrollToTop';
 
 const Testimonials =  ({data = { testimonials: [] }}) =>  {
 
    const { testimonials } = data;
+   const { hash } = useLocation();
    let testimonialsDetails = testimonials.map(function(testimonials){
       return  <li key={testimonials.user}>
           <blockquote>
@@ -14,6 +17,7 @@ const Testimonials =  ({data = { testimonials: [] }}) =>  {
 
     return (
       <section id="testimonials">
+         {hash === "#testimonials" && <ScrollToTop/>}
          <div className="text-container">
             <div className="row">
 
